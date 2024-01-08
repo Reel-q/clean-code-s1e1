@@ -6,18 +6,18 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="matrix">
+  <header class="matrix">
     <img class="matrix__img" src="./eisenhower-matrix.jpg">
     <a class="matrix__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
+  </header>
   <div class="app">
-    <p class="add-item"> <!--Подумать что сделать с id-->
-      <label class="add-item__label label" for="new-task">Add Item</label>
-      <div class="add-item__form">
+    <section class="add-item">
+      <h3 class="add-item__title">Add Item</h3>
+      <form onsubmit="return false;" class="add-item__form">
         <input id="new-task" class="input-text add-item__input" type="text">
         <button class="button add-item__button">Add</button>
-      </div>
-    </p>
+      </form>
+    </section>
     <h3 class="todo-title">Todo</h3>
     <ul class="list tasks" id="incompleted-tasks">
       <li class="list-item">
